@@ -8,15 +8,8 @@ int promptForInput() {
     return year;
 }
 
-bool isLeapYear(int year) {
-    bool isLeapYear;
-
-    if (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0)) {
-        isLeapYear = true;
-    } else {
-        isLeapYear = false;
-    }
-
+bool isLeapYear(const int year) {
+    const bool isLeapYear = (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0));
     return isLeapYear;
 }
 
