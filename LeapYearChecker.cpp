@@ -14,9 +14,11 @@ bool isLeapYear(const int year) {
 }
 
 int main() {
-    if (isLeapYear(promptForInput())) {
-        std::cout << "Leap year" << std::endl;
-    } else {
-        std::cout << "Not a leap year" << std::endl;
+    int year = promptForInput();
+    if(isLeapYear(year)) {
+        std::cout << year << " is a leap year." << std::endl;
+    } else{
+        std::cout << year << " is not a leap year." << std::endl;
     }
+    return 0;
 }
